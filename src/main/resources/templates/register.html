@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">   <!-- 这是一个框架。从springboot到页面需要引入框架 -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+<h2>欢迎来到注册页面</h2>
+<form action="/register" method="post">
+    <!--通过form表单进行交互，action是路径，方法是post。form在body里面-->
+
+    <laber>用户名</laber>
+    <input type="text" name="username" placeholder="用户名">
+    <input type="password" name="password" placeholder="密码">   <!--"type=password"密码是密文-->
+    <input type="submit" value="注册">
+
+</form>
+</body>
+</html>
